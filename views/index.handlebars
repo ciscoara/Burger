@@ -15,7 +15,7 @@
                 {{#unless devoured}}
                 <form action="/burger/eat/{{id}}" method="POST">
                     <div>
-                        <li class="m-2">{{burger_name}}<button class="ml-2 btn btn-outline-alert" type="submit">Devour
+                        <li class="m-2">{{burger_name}}<button class="ml-2 btn btn-outline-danger" type="submit">Devour
                                 It!</button></li>
 
                     </div>
@@ -45,7 +45,7 @@
     <div class="row justify-content-center">
         <form class="create-form" action="/burger/create" method="POST">
             <label for="burger">Burger Name:</label>
-            <input type="text" id="burger" name="burger_name"><button class="m-2 btn btn-outline-success"
+            <input type="text" id="burger" name="burger_name"><button class="m-2 btn btn-outline-danger"
                 type="submit">Add burger</button>
         </form>
     </div>
